@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Project2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 600px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr 1fr;
+            grid-template-rows: 1fr 2fr 0.5fr;
+            background-color: #000;
+            gap: 5px;
+            border: 1px solid black;
+        }
+        .red{
+            background-color: #b90b0b;
+            grid-column: span 2;
+            border-bottom: 7px solid black;
+        }
+        .white1{
+            background-color: #f1f2eb;
+            border-bottom: 7px solid black;
+        }
+        .white2{
+            background-color: #f1f2eb;
+            border-bottom: 7px solid black;
+            border-right: 3px solid black;
+            grid-column:span 2 ;
+
+        }
+        .silver{
+            background-color: #e7e5e5;
+            border-bottom: 20px solid black;
+        }
+        .gold{
+            background-color: #f5b316;
+            border-right: 3px solid black;
+        }
+        .white3{
+            background-color:#f1f2eb ;
+        }
+       div .blue{
+            background-color: #001d75;
+           order: 1;
+           grid-area: 3 / 3/ -1/ -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item red"></div>
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+        <div class="item silver"></div>
+        <div class="item gold"></div>
+        <div class="item white3"></div>
+        <div class="item blue"></div>
+    </div>
+</body>
+</html>
